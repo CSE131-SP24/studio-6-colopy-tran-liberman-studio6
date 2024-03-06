@@ -4,6 +4,10 @@ import edu.princeton.cs.introcs.StdDraw;
 
 public class RecursiveMethods {
 
+	public static void main(String[] args) {
+		System.out.println(geometricSum(3));
+	}
+	
 	/**
 	 * Computes the geometric sum for the first n terms in the series
 	 * 
@@ -12,10 +16,15 @@ public class RecursiveMethods {
 	 *         ...)
 	 */
 	public static double geometricSum(int n) {
-		
-			// FIXME compute the geometric sum for the first n terms recursively
+
+		if( n == 0) {
 			return 0;
+		}
 		
+		double sum = geometricSum(n - 1) + (1/(Math.pow(2, n)));
+		return sum;
+		
+
 	}
 
 	/**
@@ -27,13 +36,13 @@ public class RecursiveMethods {
 	 * @return greatest common divisor of p and q
 	 */
 	public static int gcd(int p, int q) {
-		
-			// FIXME compute the gcd of p and q using recursion
-			return 0;
-		
+
+		// FIXME compute the gcd of p and q using recursion
+		return 0;
+
 	}
 
-	
+
 
 	/**
 	 * This method uses recursion to create a reverse of the given array
@@ -42,10 +51,10 @@ public class RecursiveMethods {
 	 * @return an array with the same data as the input but it reverse order
 	 */
 	public static int[] toReversed(int[] array) {
-		
-			// FIXME create a helper method that can recursively reverse the given array
-			return new int[0];
-		
+
+		// FIXME create a helper method that can recursively reverse the given array
+		return new int[0];
+
 	}
 
 	/**
@@ -59,7 +68,7 @@ public class RecursiveMethods {
 	 */
 	public static void circlesUponCircles(double xCenter, double yCenter, double radius,
 			double radiusMinimumDrawingThreshold) {
-		
+
 		// FIXME
 	}
 
