@@ -69,6 +69,9 @@ public class RecursiveMethods {
 	public static void circlesUponCircles(double xCenter, double yCenter, double radius,
 			double radiusMinimumDrawingThreshold) {
 
+		if (radius<= radiusMinimumDrawingThreshold) {
+			return;
+		}
 		// FIXME
 	}
 
